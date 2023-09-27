@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "7e95ab1c-c366-4042-9d38-cbf52a683308",
+		"name": "Backlog-Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18219324"
+	},
+	"item": [
+		{
+			"name": "Backlog Manager -  Subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"Pedro\",\r\n    \"product\": \"TV\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/backlog-manager/subscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"backlog-manager",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Backlog Manager -  Get Subscribe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/backlog-manager/subscribe/Pedro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"backlog-manager",
+						"subscribe",
+						"Pedro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Backlog Manager -  Delete Subscribe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/backlog-manager/subscribe?id=Pedro&product=TV",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"backlog-manager",
+						"subscribe"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "Pedro"
+						},
+						{
+							"key": "product",
+							"value": "TV"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
